@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.icon {
+  font-size: 40px;
+  cursor: pointer;
+  padding-right: 8px;
+  position: relative; /* Add this line */
+}
+
+#ex4 .p1[data-count]:after {
+  position: absolute;
+  right: 0; /* Adjusted for better positioning */
+  top: 1px; /* Adjusted for better positioning */
+  content: attr(data-count);
+  font-size: 12px; /* Adjusted for better readability */
+  padding: 0.2em;
+  border-radius: 50%;
+  line-height: 1em;
+  color: white;
+  background: rgba(255, 0, 0, .85);
+  text-align: center;
+  min-width: 16px;
+  height: 16px; /* Added height to ensure it stays circular */
+  display: flex; /* Added for centering text */
+  align-items: center; /* Added for centering text */
+  justify-content: center; /* Added for centering text */
+}
+
+#ex4 .fa-stack {
+  width: 1.5em;
+}
+
+/* home section */
+.heading{
+  text-align: center;
+  font-family: sans-serif;
+  margin: 30px 0px;
+  font-size: 36px;
+}
+.allCard{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.card{
+  width: 350px;
+  background-color:rgba(210, 105, 30, 0.541);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 9px;
+  font-family: sans-serif;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card div img{
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+ 
+}
+.card h3{
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color:orangered;
+  font-weight: 800;
+
+}
+.card h4,h5{
+  margin-top: 6px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card button{
+  width: 100px;
+  padding: 11px;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+  background-color: rgba(255, 166, 0, 0.877);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+.star{
+  color: orangered;
+}
+
+
+/* card details */
+.CardDetails{
+  width: 650px;
+  margin: 35px auto;
+  font-family: sans-serif;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  align-items: center;
+  padding: 14px;
+
+}
+.btn{
+  background-color: red;
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.delete{
+  font-size: 20px;
+}
+.body{
+ min-height:230px;
+background-color: rgba(250, 235, 215, 0.288);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+}
+
+ 
+.empty .Cart{
+    font-size: 80px;
+    color: rgba(128, 128, 128, 0.678);
+    
+}
+.empty h3{
+  font-family: sans-serif;
+  color: rgba(128, 128, 128, 0.678);
+ 
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+ margin-top: -20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead tr {
+  background-color: rgba(245, 222, 179, 0.123);
+  color:black;
+  text-align: left;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control .btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background-color: rgba(135, 207, 235, 0.411);
+  color: black;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 0 5px;
+  padding: 5px;
+}
+.btn1{
+  background-color: red;
+  width: 90px;
+  padding: 4px;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.styled-table tfoot tr {
+  font-weight: bold;
+}
+
+.styled-table tfoot td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+.navlink{
+  text-decoration: none;
+  color: white;
+}
+.imgset{
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+  
+}
+.btnPayment{
+  width: 250px;
+  padding: 9px;
+  font-weight: bold;
+  background-color: rgba(0, 128, 0, 0.774);
+  cursor: pointer;
+  border-radius: 6px;
+
+}
